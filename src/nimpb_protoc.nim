@@ -10,6 +10,8 @@ elif defined(linux):
         const arch = "x86_64"
     elif defined(arm64):
         const arch = "aarch_64"
+    elif defined(arm):
+        const arch = "arm"
     else:
         {.fatal:"unsupported architecture".}
     const compilerId = "linux-" & arch
